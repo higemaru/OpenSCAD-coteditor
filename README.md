@@ -1,7 +1,7 @@
 
 # OpenSCAD syntax style for CotEditor
 
-[CotEditor][http://coteditor.com/]'s syntax style file for OpenSCAD.
+[CotEditor](http://coteditor.com/)'s syntax style file for OpenSCAD.
 
 
 ## INSTALL
@@ -11,4 +11,4 @@
 
 ## LICENSE
 
-Same as [CotEditor][http://coteditor.com/] .
+Same as [CotEditor](http://coteditor.com/) .
