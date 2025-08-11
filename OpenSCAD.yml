@@ -1,0 +1,176 @@
+# CotEditor Syntax Definition for OpenSCAD
+
+# --- 基本情報 ---
+metadata:
+  name: OpenSCAD
+  author: KAWABATA, Kazumichi
+  version: '1.0'
+  description: Syntax definition for OpenSCAD.
+  lastModified: '2025-08-09'
+  license: Same as CotEditor
+
+# --- ファイル関連付け ---
+# .scad ファイルに自動で適用するための設定
+extensions:
+- keyString: scad
+
+# --- コメントの定義 ---
+commentDelimiters:
+  beginDelimiter: /*
+  endDelimiter: '*/'
+  inlineDelimiter: //
+
+# --- 文字列の定義 ---
+strings:
+- beginString: '"'
+  endString: '"'
+
+# --- 数値の定義 ---
+numbers:
+- beginString: \b-?[0-9]+(\.[0-9]+)?\b
+  regularExpression: true
+- beginString: \b-?0[xX][0-9a-fA-F]+(_[0-9a-fA-F]+)*\b
+  description: hexadecimal
+  regularExpression: true
+
+# --- 演算子と記号 ---
+characters:
+# Arithmetic
+- beginString: "+"
+- beginString: "-"
+- beginString: "*"
+- beginString: "/"
+- beginString: "%"
+# Comparison
+- beginString: "=="
+- beginString: "!="
+- beginString: "<"
+- beginString: ">"
+- beginString: "<="
+- beginString: ">="
+# Logical
+- beginString: "&&"
+- beginString: "||"
+- beginString: "!"
+# Assignment
+- beginString: "="
+# Ternary
+- beginString: "?"
+- beginString: ":"
+
+# --- キーワードと定数 ---
+keywords:
+# 定数
+- beginString: "true"
+- beginString: "false"
+- beginString: "undef"
+# 構造定義
+- beginString: "module"
+- beginString: "function"
+
+# --- コマンド、制御文、関数 ---
+commands:
+# 制御文
+- beginString: "if"
+- beginString: "else"
+- beginString: "for"
+- beginString: "intersection_for"
+- beginString: "let"
+- beginString: "use"
+- beginString: "include"
+- beginString: "import"
+- beginString: "import_dxf"
+# 2D/3D Primitives
+- beginString: "circle"
+- beginString: "square"
+- beginString: "polygon"
+- beginString: "text"
+- beginString: "sphere"
+- beginString: "cube"
+- beginString: "cylinder"
+- beginString: "polyhedron"
+# Transformations
+- beginString: "translate"
+- beginString: "rotate"
+- beginString: "scale"
+- beginString: "resize"
+- beginString: "mirror"
+- beginString: "multmatrix"
+- beginString: "color"
+# Boolean & Other Operations
+- beginString: "union"
+- beginString: "difference"
+- beginString: "intersection"
+- beginString: "offset"
+- beginString: "hull"
+- beginString: "minkowski"
+- beginString: "render"
+- beginString: "surface"
+- beginString: "linear_extrude"
+- beginString: "rotate_extrude"
+- beginString: "projection"
+# Built-in Functions
+- beginString: "abs"
+- beginString: "acos"
+- beginString: "asin"
+- beginString: "atan"
+- beginString: "atan2"
+- beginString: "ceil"
+- beginString: "cos"
+- beginString: "sin"
+- beginString: "tan"
+- beginString: "exp"
+- beginString: "ln"
+- beginString: "log"
+- beginString: "pow"
+- beginString: "sqrt"
+- beginString: "round"
+- beginString: "sign"
+- beginString: "floor"
+- beginString: "max"
+- beginString: "min"
+- beginString: "cross"
+- beginString: "norm"
+- beginString: "len"
+- beginString: "concat"
+- beginString: "lookup"
+- beginString: "str"
+- beginString: "chr"
+- beginString: "ord"
+- beginString: "rands"
+- beginString: "version"
+- beginString: "version_num"
+# Type Checks
+- beginString: "is_undef"
+- beginString: "is_bool"
+- beginString: "is_num"
+- beginString: "is_string"
+- beginString: "is_list"
+- beginString: "is_function"
+- beginString: "is_object"
+# Other
+- beginString: "assert"
+- beginString: "echo"
+- beginString: "children"
+- beginString: "parent_module"
+- beginString: "search"
+- beginString: "fontmetrics"
+- beginString: "textmetrics"
+- beginString: "fill"
+
+# --- 変数 ---
+variables:
+- beginString: \$[a-zA-Z0-9_]+
+  regularExpression: true
+
+# --- コメント内の特別キーワード (TODOなど) ---
+attributes:
+- beginString: "(TODO|FIXME|XXX):?"
+  regularExpression: true
+  description: Keywords that want to highlight in comments. Not working.
+
+# --- アウトラインメニューの定義 ---
+outlineMenu:
+- beginString: ^([\t ]*)(module|function)([^{]*)\{
+  description: module / function
+  display: "$2 ($1)" # 例: my_module (module)
