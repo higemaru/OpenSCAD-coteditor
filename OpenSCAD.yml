@@ -9,6 +9,8 @@ metadata:
   lastModified: '2025-08-09'
   license: Same as CotEditor
 
+kind: code
+
 # --- ファイル関連付け ---
 # .scad ファイルに自動で適用するための設定
 extensions:
