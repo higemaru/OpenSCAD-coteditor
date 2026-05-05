@@ -1,0 +1,15 @@
+{
+  "fileMap" : {
+    "extensions" : [
+      "scad"
+    ]
+  },
+  "kind" : "general",
+  "metadata" : {
+    "author" : "KAWABATA, Kazumichi",
+    "description" : "Syntax definition for OpenSCAD.",
+    "lastModified" : "2025-08-09",
+    "license" : "Same as CotEditor",
+    "version" : "1.0"
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "attributes" : [
+    {
+      "begin" : "(TODO|FIXME|XXX):?",
+      "description" : "Keywords that want to highlight in comments. Not working.",
+      "regularExpression" : true
+    }
+  ],
+  "characters" : [
+    {
+      "begin" : "!"
+    },
+    {
+      "begin" : "!="
+    },
+    {
+      "begin" : "%"
+    },
+    {
+      "begin" : "&&"
+    },
+    {
+      "begin" : "*"
+    },
+    {
+      "begin" : "+"
+    },
+    {
+      "begin" : "-"
+    },
+    {
+      "begin" : "/"
+    },
+    {
+      "begin" : ":"
+    },
+    {
+      "begin" : "<"
+    },
+    {
+      "begin" : "<="
+    },
+    {
+      "begin" : "="
+    },
+    {
+      "begin" : "=="
+    },
+    {
+      "begin" : ">"
+    },
+    {
+      "begin" : ">="
+    },
+    {
+      "begin" : "?"
+    },
+    {
+      "begin" : "||"
+    }
+  ],
+  "commands" : [
+    {
+      "begin" : "abs"
+    },
+    {
+      "begin" : "acos"
+    },
+    {
+      "begin" : "asin"
+    },
+    {
+      "begin" : "assert"
+    },
+    {
+      "begin" : "atan"
+    },
+    {
+      "begin" : "atan2"
+    },
+    {
+      "begin" : "ceil"
+    },
+    {
+      "begin" : "children"
+    },
+    {
+      "begin" : "chr"
+    },
+    {
+      "begin" : "circle"
+    },
+    {
+      "begin" : "color"
+    },
+    {
+      "begin" : "concat"
+    },
+    {
+      "begin" : "cos"
+    },
+    {
+      "begin" : "cross"
+    },
+    {
+      "begin" : "cube"
+    },
+    {
+      "begin" : "cylinder"
+    },
+    {
+      "begin" : "difference"
+    },
+    {
+      "begin" : "echo"
+    },
+    {
+      "begin" : "else"
+    },
+    {
+      "begin" : "exp"
+    },
+    {
+      "begin" : "fill"
+    },
+    {
+      "begin" : "floor"
+    },
+    {
+      "begin" : "fontmetrics"
+    },
+    {
+      "begin" : "for"
+    },
+    {
+      "begin" : "hull"
+    },
+    {
+      "begin" : "if"
+    },
+    {
+      "begin" : "import"
+    },
+    {
+      "begin" : "import_dxf"
+    },
+    {
+      "begin" : "include"
+    },
+    {
+      "begin" : "intersection"
+    },
+    {
+      "begin" : "intersection_for"
+    },
+    {
+      "begin" : "is_bool"
+    },
+    {
+      "begin" : "is_function"
+    },
+    {
+      "begin" : "is_list"
+    },
+    {
+      "begin" : "is_num"
+    },
+    {
+      "begin" : "is_object"
+    },
+    {
+      "begin" : "is_string"
+    },
+    {
+      "begin" : "is_undef"
+    },
+    {
+      "begin" : "len"
+    },
+    {
+      "begin" : "let"
+    },
+    {
+      "begin" : "linear_extrude"
+    },
+    {
+      "begin" : "ln"
+    },
+    {
+      "begin" : "log"
+    },
+    {
+      "begin" : "lookup"
+    },
+    {
+      "begin" : "max"
+    },
+    {
+      "begin" : "min"
+    },
+    {
+      "begin" : "minkowski"
+    },
+    {
+      "begin" : "mirror"
+    },
+    {
+      "begin" : "multmatrix"
+    },
+    {
+      "begin" : "norm"
+    },
+    {
+      "begin" : "offset"
+    },
+    {
+      "begin" : "ord"
+    },
+    {
+      "begin" : "parent_module"
+    },
+    {
+      "begin" : "polygon"
+    },
+    {
+      "begin" : "polyhedron"
+    },
+    {
+      "begin" : "pow"
+    },
+    {
+      "begin" : "projection"
+    },
+    {
+      "begin" : "rands"
+    },
+    {
+      "begin" : "render"
+    },
+    {
+      "begin" : "resize"
+    },
+    {
+      "begin" : "rotate"
+    },
+    {
+      "begin" : "rotate_extrude"
+    },
+    {
+      "begin" : "round"
+    },
+    {
+      "begin" : "scale"
+    },
+    {
+      "begin" : "search"
+    },
+    {
+      "begin" : "sign"
+    },
+    {
+      "begin" : "sin"
+    },
+    {
+      "begin" : "sphere"
+    },
+    {
+      "begin" : "sqrt"
+    },
+    {
+      "begin" : "square"
+    },
+    {
+      "begin" : "str"
+    },
+    {
+      "begin" : "surface"
+    },
+    {
+      "begin" : "tan"
+    },
+    {
+      "begin" : "text"
+    },
+    {
+      "begin" : "textmetrics"
+    },
+    {
+      "begin" : "translate"
+    },
+    {
+      "begin" : "union"
+    },
+    {
+      "begin" : "use"
+    },
+    {
+      "begin" : "version"
+    },
+    {
+      "begin" : "version_num"
+    }
+  ],
+  "keywords" : [
+    {
+      "begin" : "false"
+    },
+    {
+      "begin" : "function"
+    },
+    {
+      "begin" : "module"
+    },
+    {
+      "begin" : "true"
+    },
+    {
+      "begin" : "undef"
+    }
+  ],
+  "numbers" : [
+    {
+      "begin" : "\\b-?0[xX][0-9a-fA-F]+(_[0-9a-fA-F]+)*\\b",
+      "description" : "hexadecimal",
+      "regularExpression" : true
+    },
+    {
+      "begin" : "\\b-?[0-9]+(\\.[0-9]+)?\\b",
+      "regularExpression" : true
+    }
+  ],
+  "variables" : [
+    {
+      "begin" : "\\$[a-zA-Z0-9_]+",
+      "regularExpression" : true
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+[
+  {
+    "description" : "module / function",
+    "pattern" : "^([\\t ]*)(module|function)([^{]*)\\{",
+    "template" : ""
+  }
+]
